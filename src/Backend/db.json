@@ -1,0 +1,26 @@
+{
+  "authuser": [
+    {
+      "id": "0e91",
+      "username": "Atul Gathwala",
+      "email": "atulgathwala1728@gmail.com",
+      "password": "abc123",
+      "userImg": "http://res.cloudinary.com/dasa3kzyf/image/upload/v1745987422/sqskkjj2phrvc4vdsoht.png",
+      "role":"admin"
+    },
+    {
+      "id": "7479",
+      "username": "Prashanth",
+      "email": "prashanthn3434@gmail.com",
+      "password": "123",
+      "userImg": "https://i.ibb.co/RbWGZ2p/person.png"
+    },
+    {
+      "id": "1ffa",
+      "username": "Sahoo",
+      "email": "sahoo@abc.com",
+      "password": "123",
+      "userImg": "https://i.ibb.co/RbWGZ2p/person.png"
+    }
+  ]
+}
