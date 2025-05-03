@@ -2,7 +2,7 @@ import React from "react";
 import { FaUserAlt } from "react-icons/fa";
 import { ImFilePicture } from "react-icons/im";
 import { IoIosUnlock } from "react-icons/io";
-import { MdAccountBalanceWallet } from "react-icons/md";
+import { MdAccountBalanceWallet, MdOutlineDeleteForever } from "react-icons/md";
 import { NavLink } from "react-router-dom";
 
 const UserSideBar = () => {
@@ -93,7 +93,28 @@ const UserSideBar = () => {
               <span>
                 <IoIosUnlock />
               </span>
-              <span>Change password</span>
+              <span>Change Password</span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "flex items-center gap-2 py-2 rounded-md shadow-xl "
+                  : `flex items-center gap-2 py-2 rounded-md `
+              }
+              to={"/user-profile/delete-account"}
+              style={({ isActive }) => ({
+                backgroundColor: isActive && "red",
+                paddingLeft: isActive && "10px",
+                color: isActive && "white",
+              })}
+            >
+              {" "}
+              <span>
+                <MdOutlineDeleteForever />
+              </span>
+              <span>Delete Account</span>
             </NavLink>
           </li>
         </ul>

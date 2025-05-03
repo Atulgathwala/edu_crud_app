@@ -65,18 +65,19 @@ const UpdateProfilePicture = () => {
 
   return (
     <section className="w-full h-full flex justify-center items-center">
-      <article className="min-h-[500px] w-[26%] rounded-xl bg-white shadow-md p-8 flex flex-col justify-center items-center gap-4">
+      <article className="min-h-[500px] w-[28%] rounded-xl bg-white shadow-md p-8 flex flex-col justify-center items-center gap-4">
         <header>
           <h1 className="text-[24px] text-center  font-semibold">
             Update Picture
           </h1>
-        </header>
+              </header>
+          
         <main>
           <picture>
             <img
               src={previewImage || state?.user?.userImg || authUser?.userImg}
               alt="No image"
-              className="h-[300px] w-[300px] border rounded-full"
+              className="h-[300px] w-[300px] border rounded-[50%]"
             />
           </picture>
         </main>

@@ -8,6 +8,7 @@ import MyAccount from "../components/UserComponents/MyAccount";
 import UpdateProfilePicture from "../components/UserComponents/UpdateProfilePicture";
 import AddProfile from "../components/UserComponents/AddProfile";
 import ChangePassword from "../components/UserComponents/ChangePassword";
+import DeleteAccount from "../components/UserComponents/DeleteAccount";
 
 const myRoutes = createBrowserRouter([
   {
@@ -47,6 +48,10 @@ const myRoutes = createBrowserRouter([
       {
         path: "change-password",
         element: <ChangePassword />,
+      },
+      {
+        path: "delete-account",
+        element: <DeleteAccount />,
       },
     ],
   },

@@ -26,8 +26,10 @@ const Register = () => {
     let Payload = {
       ...values,
       userImg: "https://i.ibb.co/RbWGZ2p/person.png",
+      role: "user",
+      isPrime: false,
     };
- 
+
     signUp(Payload);
     navigate("/login");
   };

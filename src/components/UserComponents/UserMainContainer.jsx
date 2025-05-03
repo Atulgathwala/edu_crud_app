@@ -11,7 +11,7 @@ const UserMainContainer = () => {
           <NavbarMainContainer />
         </header>
         <main className="h-[calc(100vh-70px)] w-full flex">
-          <aside className="w-[14%] h-full bg-secondary-color">
+          <aside className="w-[16%] h-full bg-secondary-color">
             <UserSideBar />
           </aside>
           <aside className="w-[86%] h-full ">

@@ -6,14 +6,25 @@
       "email": "atulgathwala1728@gmail.com",
       "password": "abc123",
       "userImg": "http://res.cloudinary.com/dasa3kzyf/image/upload/v1745987422/sqskkjj2phrvc4vdsoht.png",
-      "role":"admin"
+      "role": "admin",
+      "isPrime": false,
+      "dob": "2025-05-07",
+      "highestDegree": "btech",
+      "state": "karnataka",
+      "city": "bengaluru",
+      "compleAddress": "House no.36\nSugar mill colony shamli"
     },
     {
       "id": "7479",
       "username": "Prashanth",
       "email": "prashanthn3434@gmail.com",
       "password": "123",
-      "userImg": "https://i.ibb.co/RbWGZ2p/person.png"
+      "userImg": "https://i.ibb.co/RbWGZ2p/person.png",
+      "dob": "2025-05-07",
+      "highestDegree": "btech",
+      "state": "karnataka",
+      "city": "bengaluru",
+      "compleAddress": "Near rajendra park\nSugar mill colony shamli"
     },
     {
       "id": "1ffa",

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Form as FormikForm, Formik } from "formik";
 import * as yup from "yup";
 import FormikControl from "../FormikComponents/FormikControl";
@@ -7,6 +7,8 @@ import axios from "axios";
 import { AuthContextAPI } from "../../context/AuthContext";
 
 const ChangePassword = () => {
+  const [showForm, setShowForm] = useState(false);
+
   let { authUser } = useContext(AuthContextAPI);
   let initialState = {
     oldPassword: "",
@@ -43,18 +45,28 @@ const ChangePassword = () => {
     }
   };
 
+  useEffect(() => {
+    // Trigger animation after mount
+    setShowForm(true);
+  }, []);
+
   let validationSchema = yup.object({
     oldPassword: yup.string().required("Required"),
     newPassword: yup.string().required("Required"),
     confirmNewPassword: yup.string("required"),
   });
   return (
-    <section className="h-full w-full flex items-center justify-center">
-      <article className="min-h-[300px] w-[25%] bg-white rounded-md shadow-xl p-6 ">
+    <section className="h-full w-full flex items-center justify-center ">
+      <article
+        className={`w-[25%] min-h-[300px] bg-white shadow-xl rounded-md p-6  transform transition-transform duration-500 ${
+          showForm ? "scale-in" : "scale-0"
+        }`}
+      >
         <header>
           <h1 className="text-center text-[24px] font-semibold">
             Change Password
           </h1>
+          <hr className="my-4 border-b-1 border-[#727778]" />
         </header>
         <main>
           <Formik
