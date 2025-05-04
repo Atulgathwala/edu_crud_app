@@ -9,6 +9,11 @@ import UpdateProfilePicture from "../components/UserComponents/UpdateProfilePict
 import AddProfile from "../components/UserComponents/AddProfile";
 import ChangePassword from "../components/UserComponents/ChangePassword";
 import DeleteAccount from "../components/UserComponents/DeleteAccount";
+import AdminMainContainer from "../components/AdminComponents.jsx/AdminMainContainer";
+import AdminDashboard from "../components/AdminComponents.jsx/AdminDashboard";
+import CreateCourses from "../components/AdminComponents.jsx/CreateCourses";
+import AllUsers from "../components/AdminComponents.jsx/AllUsers";
+import AllCourses from "../components/AdminComponents.jsx/AllCourses";
 
 const myRoutes = createBrowserRouter([
   {
@@ -52,6 +57,28 @@ const myRoutes = createBrowserRouter([
       {
         path: "delete-account",
         element: <DeleteAccount />,
+      },
+    ],
+  },
+  {
+    path: "admin",
+    element: <AdminMainContainer />,
+    children: [
+      {
+        index: true,
+        element: <AdminDashboard />,
+      },
+      {
+        path: "create-course",
+        element: <CreateCourses />,
+      },
+      {
+        path: "all-users",
+        element: <AllUsers />,
+      },
+      {
+        path: "all-courses",
+        element: <AllCourses />,
       },
     ],
   },

@@ -11,6 +11,18 @@ const Menu = () => {
         <li className="flex items-center">
           <NavLink
             className="py-2 px-4 rounded-md"
+            to={"/admin"}
+            style={({ isActive }) => ({
+              backgroundColor: isActive && "#6300a3",
+              color: isActive && "white",
+            })}
+          >
+            Admin
+          </NavLink>
+        </li>
+        <li className="flex items-center">
+          <NavLink
+            className="py-2 px-4 rounded-md"
             to={"/"}
             style={({ isActive }) => ({
               backgroundColor: isActive && "#6300a3",

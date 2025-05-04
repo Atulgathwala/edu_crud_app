@@ -32,6 +32,76 @@
       "email": "sahoo@abc.com",
       "password": "123",
       "userImg": "https://i.ibb.co/RbWGZ2p/person.png"
+    },
+    {
+      "id": "6b44",
+      "username": "Shraddha Ghodke",
+      "email": "shradhaabc@gmail.com",
+      "password": "123",
+      "userImg": "http://res.cloudinary.com/dasa3kzyf/image/upload/v1746255130/temmzvl3bcpogejag2oi.jpg",
+      "role": "user",
+      "isPrime": false
+    },
+    {
+      "id": "b27c",
+      "username": "Akhshay Thakur",
+      "email": "ak@gmail.com",
+      "password": "123",
+      "userImg": "https://i.ibb.co/RbWGZ2p/person.png",
+      "role": "user",
+      "isPrime": false
+    }
+  ],
+  "courses-data": [
+    {
+      "id": "bdb7",
+      "courseTitle": "Formik Library",
+      "courseThumbnail": "https://res.cloudinary.com/dasa3kzyf/image/upload/v1746265129/mubawpzdrc2lrfwkjdqk.png",
+      "courseDuration": "20",
+      "courseTrainer": "Code Evolution",
+      "courseDescription": "Complete Formik Course",
+      "videos": [
+        {
+          "videoTitle": "Introduction",
+          "videoUrl": "https://res.cloudinary.com/dasa3kzyf/video/upload/v1746265131/lhk2yueyiroh6sn4hbnc.mp4"
+        },
+        {
+          "videoTitle": "Formik lib",
+          "videoUrl": "https://res.cloudinary.com/dasa3kzyf/video/upload/v1746265132/tl61ojjuocisgyrf5zey.mp4"
+        }
+      ]
+    },
+    {
+      "id": "f4b4",
+      "courseTitle": "C++",
+      "courseThumbnail": "https://res.cloudinary.com/dasa3kzyf/image/upload/v1746265260/wbvcbh5gqnoghq01ktjh.png",
+      "courseDuration": "56",
+      "courseTrainer": "Atul Gathwala",
+      "courseDescription": "Become C++ developer",
+      "videos": [
+        {
+          "videoTitle": "Intorduction",
+          "videoUrl": "https://res.cloudinary.com/dasa3kzyf/video/upload/v1746265262/v3ee3308sqdifsc4kr8e.mp4"
+        },
+        {
+          "videoTitle": "varaibles",
+          "videoUrl": "https://res.cloudinary.com/dasa3kzyf/video/upload/v1746265265/xxuzi5bj5gql56chtbgn.mp4"
+        }
+      ]
+    },
+    {
+      "id": "41f1",
+      "courseTitle": "Astronaut",
+      "courseThumbnail": "https://res.cloudinary.com/dasa3kzyf/image/upload/v1746266009/hf4u38vmd8sek24ajzqv.png",
+      "courseDuration": "79",
+      "courseTrainer": "Prashanth N",
+      "courseDescription": "Best Astronaut program",
+      "videos": [
+        {
+          "videoTitle": "Introduction",
+          "videoUrl": "https://res.cloudinary.com/dasa3kzyf/video/upload/v1746266011/mahy9ugywzbzgjiij1gc.mp4"
+        }
+      ]
     }
   ]
 }
